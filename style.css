@@ -103,6 +103,20 @@
 
 
 /*Soluzione ESERCIZIO 5*/
+.ex-5-square:hover {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    transition: all 2s;
+    transition-duration: 2s;
+}
+.ex-5-square:active {
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    transition: all 2s;
+}
+
 
 
 /*Soluzione ESERCIZIO 6*/
