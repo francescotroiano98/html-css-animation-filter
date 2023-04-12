@@ -127,23 +127,17 @@
 /*Soluzione ESERCIZIO 7*/
 .ex-7-img:hover{
     filter: grayscale(100%);
-    width: 100%;
-    height: 100%;
-    transition-property: filter, width, height;
-    transition-duration: 5s, 10s, 2s;
-    transition-delay: 0s, 0s, 4s;
+    transition: all 2s;
 }
 
 
 /*Soluzione ESERCIZIO 8*/
 .ex-8-img:hover{
     filter: grayscale(100%);
-    width: 600px;
-    height: 600px;
     border-radius: 50%;
-    transition-property: filter, width, height, border-radius;
-    transition-duration: 5s, 10s, 2s, 2s;
-    transition-delay: 0s, 0s, 4s, 2s;
+    transition-property: filter, border-radius;
+    transition-duration: 2s, 4s;
+    transition-delay: 2s, 4s;
 }
 
 /*Soluzione ESERCIZIO 9*/
