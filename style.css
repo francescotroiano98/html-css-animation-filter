@@ -166,6 +166,16 @@
 
 
 /*Soluzione ESERCIZIO 11*/
+.ex-11-icon:hover{
+    animation-name: ex-11-icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes ex-11-icon{
+    0%   {transform: rotate(0);}
+    25% {transform: rotate(270deg);}
+    100%{transform: rotate(0);}
+  }
 
 
 /*Soluzione ESERCIZIO 12*/
