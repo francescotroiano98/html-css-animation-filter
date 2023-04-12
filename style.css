@@ -202,7 +202,7 @@
 /*Soluzione ESERCIZIO 13*/
 .ex-13-top-white{
     animation-name: ex-13-top-white;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     
@@ -217,7 +217,7 @@
 }
 .ex-13-bottom-white{
     animation-name: ex-13-bottom-white;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
