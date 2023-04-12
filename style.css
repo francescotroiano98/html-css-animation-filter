@@ -179,6 +179,20 @@
 
 
 /*Soluzione ESERCIZIO 12*/
+.ex-12-button:active{
+    animation-name: ex-12-top-white, ex-12-bottom-white;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes ex-12-top-white{
+    0%  {position: absolute;
+        left: 71%;}
+    100%{}
+}
+  @keyframes ex-12-bottom-white{
+    0%   {}
+    100% {}
+}
 
 
 /*Soluzione ESERCIZIO 13*/
