@@ -127,9 +127,11 @@
 /*Soluzione ESERCIZIO 7*/
 .ex-7-img:hover{
     filter: grayscale(100%);
-    border-radius: 50%;
-    transition-duration: 4s;
-    transition: 2s;
+    width: 100%;
+    height: 100%;
+    transition-property: filter, width, height;
+    transition-duration: 5s, 10s, 2s;
+    transition-delay: 0s, 0s, 4s;
 }
 
 
