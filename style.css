@@ -83,7 +83,12 @@
 }
 
 /*Soluzione ESERCIZIO 3*/
-
+.ex-3-square:hover{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all 3s;
+}
 
 
 /*Soluzione ESERCIZIO 4*/
