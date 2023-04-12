@@ -70,10 +70,13 @@
 /*Inizio delle soluzioni*/
 
 /*Soluzione ESERCIZIO 1*/
+.ex-1-square:hover{
+    background-color: red;
+    transition: all 2s;
+}
 
 
 /*Soluzione ESERCIZIO 2*/
-
 
 /*Soluzione ESERCIZIO 3*/
 
