@@ -136,7 +136,15 @@
 
 
 /*Soluzione ESERCIZIO 8*/
-
+.ex-8-img:hover{
+    filter: grayscale(100%);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    transition-property: filter, width, height, border-radius;
+    transition-duration: 5s, 10s, 2s, 2s;
+    transition-delay: 0s, 0s, 4s, 2s;
+}
 
 /*Soluzione ESERCIZIO 9*/
 
