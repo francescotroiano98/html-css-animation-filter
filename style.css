@@ -2,32 +2,39 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    transition: all 2s;
 }
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: all 3s;
 }
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: all 3s;
 }
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: all 2s;
 }
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: all 2s;
 }
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
-
+.ex-7-img{
+    transition: all 2s;
+}
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
@@ -72,14 +79,14 @@
 /*Soluzione ESERCIZIO 1*/
 .ex-1-square:hover{
     background-color: red;
-    transition: all 2s;
+    
 }
 
 
 /*Soluzione ESERCIZIO 2*/
 .ex-2-square:active{
     width: 100%;
-    transition: all 3s;
+    
 }
 
 /*Soluzione ESERCIZIO 3*/
@@ -87,7 +94,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    transition: all 3s;
+    
 }
 
 
@@ -98,7 +105,7 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition: all 2s;
+    
 }
 
 
@@ -107,14 +114,12 @@
     margin: 20px;
     width: 100px;
     height: 100px;
-    transition: all 2s;
-    transition-duration: 2s;
+    
 }
 .ex-5-square:active {
     margin: 20px;
     width: 30px;
     height: 30px;
-    transition: all 2s;
 }
 
 
@@ -126,23 +131,23 @@
 
 /*Soluzione ESERCIZIO 7*/
 .ex-7-img:hover{
-    filter: grayscale(100%);
-    transition: all 2s;
+    filter: grayscale(50%) sepia(50%);
+    
 }
 
 
 /*Soluzione ESERCIZIO 8*/
 .ex-8-img:hover{
-    filter: grayscale(100%);
+    filter: grayscale(50%) sepia(50%);
     border-radius: 50%;
-    transition-property: filter, border-radius;
-    transition-duration: 2s, 4s;
-    transition-delay: 2s, 4s;
+    transition-property: filter, border-radius, sepia;
+    transition-duration: 2s, 4s, 2s;
+    transition-delay: 2s, 4s, 6s;
 }
 
 /*Soluzione ESERCIZIO 9*/
 .ex-9-img:hover{
-    filter: grayscale(100%);
+    filter: grayscale(100%) sepia(50%);
     border-radius: 50%;
     width: 80%;
     height: 80%;
@@ -158,6 +163,7 @@
     animation-name: ex-10-icon;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 @keyframes ex-10-icon{
     0%   {transform: rotate(0);}
@@ -170,6 +176,7 @@
     animation-name: ex-11-icon;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 @keyframes ex-11-icon{
     0%   {transform: rotate(0);}
@@ -179,19 +186,19 @@
 
 
 /*Soluzione ESERCIZIO 12*/
-.ex-12-top-white{
+.ex-12-button:hover .ex-12-top-white{
     animation-name: ex-12-top-white;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: ex-12-bottom-white;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 @keyframes ex-12-top-white{
     0%  {left: 10%;}
     100%{left:71%;}
-}
-.ex-12-bottom-white{
-    animation-name: ex-12-bottom-white;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }
   @keyframes ex-12-bottom-white{
     0%   {right: 10%;}
@@ -200,13 +207,14 @@
 
 
 /*Soluzione ESERCIZIO 13*/
-.ex-13-top-white{
+.ex-13-button:hover .ex-13-top-white{
     animation-name: ex-13-top-white;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     
 }
+
 @keyframes ex-13-top-white{
     0%{left: 10%; top: -10px;}
     25%{left: 85%; top: -10px;}
@@ -215,11 +223,12 @@
     90% {top: -10px; left: -10%;}
     100%{left: 10%; top: -10px;}
 }
-.ex-13-bottom-white{
+.ex-13-button:hover .ex-13-bottom-white{
     animation-name: ex-13-bottom-white;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
 }
   @keyframes ex-13-bottom-white{
     0%   {bottom: -10px; right: 20%;}
